@@ -47,28 +47,12 @@ var config = {
 			position: "top_left"
 		},
 		{
-			module: "calendar",
-			header: "US Holidays",
-			position: "top_left",
-			config: {
-				calendars: [
-					{
-						symbol: "calendar-check",
-						url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"					}
-				]
-			}
-		},
-		{
-			module: "compliments",
-			position: "lower_third"
-		},
-		{
 			module: "currentweather",
 			position: "top_right",
 			config: {
-				location: "New York",
+				location: "",
 				locationID: "", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				appid: ""
 			}
 		},
 		{
@@ -76,9 +60,9 @@ var config = {
 			position: "top_right",
 			header: "Weather Forecast",
 			config: {
-				location: "New York",
-				locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "",
+				locationID: "", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
+				appid: ""
 			}
 		},
 		{
@@ -97,6 +81,17 @@ var config = {
 				broadcastNewsUpdates: true
 			}
 		},
+		{
+			module: "MMM-NowPlayingOnSpotify",
+			position: "top_center",
+
+			config: {
+			  clientID: "",
+			  clientSecret: "",
+			  accessToken: "",
+			  refreshToken: ""
+			}
+		  },
 	]
 
 };
